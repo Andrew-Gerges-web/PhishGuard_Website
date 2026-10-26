@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHISHGUARD is an interactive phishing-awareness project. Learn to recognize phishing, test your skills, and build safer habits.">
+    <title>PHISHGUARD | Think Before You Click.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#learn">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="logo" aria-label="PHISHGUARD home">
+                <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>PHISHGUARD</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+                <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#learn">Learn</a></li>
+                    <li><a class="nav-link" href="#types">Attack Types</a></li>
+                    <li><a class="nav-link" href="#signs">Spot the Signs</a></li>
+                    <li><a class="nav-link" href="#examples">Examples</a></li>
+                    <li><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li><a class="nav-link" href="#analyzer">Analyzer</a></li>
+                    <li><a class="nav-link" href="#safety">Stay Safe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">CYBERSECURITY AWARENESS INITIATIVE</p>
+                    <h1>One Click Can Change <span class="accent">Everything.</span></h1>
+                    <p class="lead">Phishing attacks disguise themselves as legitimate messages to trick people into revealing sensitive information, opening unsafe attachments, or visiting fraudulent websites. Learn to recognize the warning signs before you click.</p>
+                    <div class="button-row">
+                        <a class="btn btn-primary" href="#learn">Learn to Spot Phishing</a>
+                        <a class="btn btn-ghost" href="#quiz">Test Your Skills</a>
+                    </div>
+                    <ul class="hero-tags">
+                        <li>Understand the Threat</li>
+                        <li>Recognize the Signs</li>
+                        <li>Build Safer Habits</li>
+                    </ul>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="float-card fc-1"><span class="mono">&gt; urgent_notice</span>Verify now or lose access</div>
+                    <div class="float-card fc-2"><span class="mono">&gt; link_check</span>Destination mismatch</div>
+                    <div class="float-card fc-3"><span class="mono">&gt; verified</span>Contacted independently</div>
+                    <svg class="shield" viewBox="0 0 200 240">
+                        <defs>
+                            <linearGradient id="shield-fill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#39FF88" stop-opacity="0.35"/>
+                                <stop offset="1" stop-color="#19C763" stop-opacity="0.05"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M100 10 20 42v62c0 52 34 96 80 126 46-30 80-74 80-126V42L100 10Z" fill="url(#shield-fill)" stroke="#39FF88" stroke-width="3"/>
+                        <path d="M100 38 46 60v44c0 36 22 68 54 90 32-22 54-54 54-90V60l-54-22Z" fill="none" stroke="#26392C" stroke-width="2"/>
+                        <path d="m68 112 24 24 42-48" fill="none" stroke="#39FF88" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="learn">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">01 // THE BASICS</p>
+                    <h2>What Is Phishing?</h2>
+                    <p class="lead">Phishing is a form of social engineering in which an attacker pretends to be a trustworthy person, company, or organization to manipulate someone into taking an unsafe action. The attacker may try to steal passwords, financial information, verification codes, or other sensitive data.</p>
+                </header>
+                <div class="card-grid three">
+                    <article class="card reveal">
+                        <h3>The Impersonation</h3>
+                        <p>An attacker pretends to be someone you recognize or trust, such as a delivery service, bank, employer, school, or online platform.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>The Manipulation</h3>
+                        <p>The message may create urgency, fear, curiosity, or excitement to make you act before thinking carefully.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>The Objective</h3>
+                        <p>The attacker may want your credentials, personal information, money, access to an account, or an opportunity to compromise your device.</p>
+                    </article>
+                </div>
+                <ol class="process reveal" aria-label="How phishing works">
+                    <li>Impersonation</li>
+                    <li>Manipulation</li>
+                    <li>Unsafe Action</li>
+                </ol>
+                <p class="center-note reveal">Not every suspicious-looking message is malicious. Evaluate several clues together rather than relying on a single detail.</p>
+            </div>
+        </section>
+
+        <section class="section alt" id="types">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">02 // ATTACK TYPES</p>
+                    <h2>Know Your Enemy</h2>
+                    <p class="lead">Phishing takes different forms depending on the channel, target, and method of deception. Understanding these patterns makes suspicious messages easier to recognize.</p>
+                </header>
+                <div class="card-grid two" id="types-grid"></div>
+            </div>
+        </section>
+
+        <section class="section" id="signs">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">03 // RED FLAGS</p>
+                    <h2>Red Flags You Should Never Ignore</h2>
+                    <p class="lead">Phishing messages are not always obvious. A professional-looking message can still be deceptive, and spelling mistakes alone do not prove that a message is fraudulent.</p>
+                </header>
+                <ol class="flag-grid" id="flags-grid"></ol>
+                <aside class="callout reveal">
+                    <strong>Remember:</strong> A single clue is not always proof of phishing. Evaluate the full context and verify suspicious requests through a trusted, independently obtained contact method.
+                </aside>
+            </div>
+        </section>
+
+        <section class="section alt" id="examples">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">04 // PRACTICE</p>
+                    <h2>Can You Spot the Trap?</h2>
+                    <p class="lead">Review each fictional message. Look for the sender, request, context, and possible warning signs.</p>
+                </header>
+                <div class="card-grid three" id="examples-grid"></div>
+            </div>
+        </section>
+
+        <section class="section" id="quiz">
+            <div class="container narrow">
+                <header class="section-head reveal">
+                    <p class="eyebrow">05 // QUIZ</p>
+                    <h2>Think You Can Spot Phishing?</h2>
+                    <p class="lead">Test your ability to recognize deceptive messages. Ten questions, increasing in difficulty. Read carefully before choosing your answer.</p>
+                </header>
+                <div class="panel reveal">
+                    <div id="quiz-body">
+                        <div class="quiz-meta">
+                            <span class="mono" id="quiz-progress-text">Question 1 of 10</span>
+                            <span class="mono" id="quiz-score-live">Score: 0</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1" id="quiz-progress-bar"><div class="progress-fill" id="quiz-progress-fill"></div></div>
+                        <h3 class="quiz-question" id="quiz-question" tabindex="-1"></h3>
+                        <div class="quiz-options" id="quiz-options"></div>
+                        <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+                        <button class="btn btn-primary" id="quiz-next" type="button" hidden>Next Question</button>
+                    </div>
+                    <div id="quiz-result" hidden>
+                        <p class="eyebrow">QUIZ COMPLETE</p>
+                        <p class="result-score" id="result-score"></p>
+                        <p class="result-percent mono" id="result-percent"></p>
+                        <p id="result-message"></p>
+                        <button class="btn btn-primary" id="quiz-restart" type="button">Restart Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="analyzer">
+            <div class="container narrow">
+                <header class="section-head reveal">
+                    <p class="eyebrow">06 // ANALYZER</p>
+                    <h2>Analyze a Suspicious Message</h2>
+                    <p class="lead">Not sure about a message? Use this educational demonstration to explore potential warning signs. This frontend-only version is a demonstration and does not use a trained machine-learning model.</p>
+                </header>
+                <div class="panel reveal">
+                    <p class="notice">Do not paste passwords, private conversations, confidential information, or sensitive personal data. Your text stays in your browser: it is not stored, sent anywhere, and links are never opened.</p>
+                    <label for="analyzer-input" class="field-label">Message text</label>
+                    <textarea id="analyzer-input" rows="8" maxlength="3000" placeholder="Paste a suspicious message here, or load the fictional sample."></textarea>
+                    <div class="analyzer-bar">
+                        <span class="mono" id="char-count">0 / 3000</span>
+                        <div class="button-row">
+                            <button class="btn btn-ghost" id="analyzer-sample" type="button">Use Example Message</button>
+                            <button class="btn btn-ghost" id="analyzer-clear" type="button">Clear Input</button>
+                            <button class="btn btn-primary" id="analyzer-run" type="button">Analyze Message</button>
+                        </div>
+                    </div>
+                    <p class="form-error" id="analyzer-error" role="alert" hidden></p>
+                    <div class="analysis" id="analysis" aria-live="polite" hidden>
+                        <p class="mono label">HEURISTIC RISK ESTIMATE</p>
+                        <p class="risk-label" id="risk-label"></p>
+                        <p id="risk-explanation"></p>
+                        <ul class="finding-list" id="finding-list"></ul>
+                    </div>
+                    <p class="limit-note">Limitations: this is preliminary guidance based on simple keyword and link-pattern checks, not a real probability and not a verdict. Finding no indicators does not prove a message is safe, and finding some does not prove it is phishing. Always verify independently through a trusted contact method.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="safety">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">07 // DEFENSE</p>
+                    <h2>Your Defense Starts Here</h2>
+                    <p class="lead">You do not need to become a cybersecurity expert to reduce your risk. A few consistent habits can make it harder for attackers to deceive you.</p>
+                </header>
+                <ol class="steps" id="steps-list"></ol>
+                <aside class="callout reveal">
+                    <strong>When in doubt, do not use the message to verify itself. Find a trusted way to contact the organization independently.</strong>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="container narrow center">
+                <h2 class="reveal">Make Every Click a Conscious Decision.</h2>
+                <p class="lead reveal">Cybersecurity begins with awareness. Learn the signs, question unexpected requests, and help others build safer digital habits.</p>
+                <div class="button-row center-row reveal">
+                    <button class="btn btn-primary" id="cta-retake" type="button">Retake the Quiz</button>
+                    <a class="btn btn-ghost" href="#safety">Review Safety Tips</a>
+                </div>
+                <p class="project-note reveal">PHISHGUARD is a student-led cybersecurity awareness project created for educational purposes. It is not a commercial security product and cannot guarantee that a message is safe.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#home" class="logo" aria-label="PHISHGUARD home">
+                    <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>PHISHGUARD</span>
+                </a>
+                <p class="muted">Think Before You Click.</p>
+            </div>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#types">Attack Types</a></li>
+                    <li><a href="#signs">Spot the Signs</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#analyzer">Analyzer</a></li>
+                    <li><a href="#safety">Stay Safe</a></li>
+                </ul>
+            </nav>
+            <nav class="connect" aria-label="Contact and social links">
+                <h2 class="connect-title">Connect</h2>
+                <ul class="connect-list">
+                    <li>
+                        <a href="https://github.com/Andrew-Gerges-web" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/andrew-gerges-803431428/" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11v5M8 8v.01M12 16v-5m0 2c0-1.2 1-2 2-2s2 .8 2 2v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/and.rew11111111/" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1E59zdYyq4/" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2.5V4.5H14C11.8 4.5 10.5 6 10.5 8v2H8v3.5h2.5V21H14v-7.5h2.5L17 10h-3V8.5c0-.3.2-.5.5-.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:andrewgergesazizfouad@gmail.com">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            andrewgergesazizfouad@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p class="muted">All educational examples on this site are fictional.</p>
+            <p class="muted">&copy; <span id="year"></span> PHISHGUARD. Student project.</p>
+        </div>
+    </footer>
+</body>
+</html>
